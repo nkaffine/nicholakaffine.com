@@ -43,3 +43,32 @@ body:after {
 .aboutme {
     font-size: 16px;
 }
+
+#githublogo {
+    height: 50px;
+    padding-left: 2.5%;
+    padding-right: 10%;
+}
+
+.gap {
+    height: 5vh;
+}
+
+.jobinfo {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.jobtitle {
+    font-weight: normal;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.headerlink {
+    color: black;
+}
+
+.bottom {
+    height: 20vh;
+}

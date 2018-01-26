@@ -8,7 +8,7 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en" style="height: 100vh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Nicholas Kaffine</title>
@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome.min.css">
     <link rel="stylesheet" href="style/main.css">
     <script src="scripts/style.js"></script>
 </head>
@@ -40,57 +39,70 @@
                 <li class="toPageLink"><a href="/#about">About Me</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a style="padding:0px;" target="_blank" href="https://github.com/nkaffine"><img src="images/github-icon.png"
-                                                                                    style="height:50px; padding-left:2.5%; padding-right:10%;"></a></li>
+                <li><a style="padding:0;" target="_blank" href="https://github.com/nkaffine"><img id="githublogo"
+                                                                                                  src="images/github-icon.png"></a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 <img id="mainimg" src="/images/slider/IMG_0509.JPG"
      class="img-rounded col-lg-offset-3 visible-lg col-lg-3 col-lg-push-3 no-pad">
-<div class="panel col-lg-3 col-lg-pull-3 box visible-lg" id="description"style="overflow: scroll;">
+<div class="panel col-lg-3 col-lg-pull-3 box visible-lg" id="description" style="overflow: scroll;">
     <h1 class="title">Nicholas Kaffine</h1>
-    <div style="overflow: scroll;"><p class="aboutme">I have been doing web development work for the last year creating web applications that use PHP
-        to interact with a MySQL database. In addition to web development I have been watching a Stanford course on IOS
+    <p class="aboutme">I have been doing web development work for the last year creating
+        web applications that use PHP
+        to interact with a MySQL database. In addition to web development I have been watching a Stanford course on
+        IOS
         development which is another area that I want to explore. I have been working on two startups. </p>
-    <p class="aboutme"><a href="https://www.turtleshirts.org">Turtle Shirts</a> is a clothing brand that I started with two friends from my high school internship. I constructed
+    <p class="aboutme"><a href="https://www.turtleshirts.org">Turtle Shirts</a> is a clothing brand that I started
+        with two friends from my high school internship. I constructed
         the website which is designed to handle low volumes of transactions using a MySQL
         database with PHP and the Stripe.js API to process payments.</p>
-    <p class="aboutme">I am also working on a startup Owaygo. I have been constructing a database application prototyped with a website
+    <p class="aboutme">I am also working on a startup Owaygo. I have been constructing a database application
+        prototyped with a website
         that manages user authentication through Facebook, purchases with Stripe.js, and handles user uploaded media
         information about restaurants in areas around them.</p>
-    <p class="aboutme">One of hobbies is creating and playing music. When I get the chance I play concerts with my high school band
-        <a href="http://theaccidents.band">The Accidents</a> or I write electronic music. One of my more recent songs was used as the background music for
-        a <a href="https://youtu.be/wLkLwKLaTZo" target="_blank">commercial</a> that I made with my co-founders at Turtle Shirts.</p>
-    </div>
+    <p class="aboutme">One of hobbies is creating and playing music. When I get the chance I play concerts with my
+        high school band
+        <a href="http://theaccidents.band">The Accidents</a> or I write electronic music. One of my more recent
+        songs was used as the background music for
+        a <a href="https://youtu.be/wLkLwKLaTZo" target="_blank">commercial</a> that I made with my co-founders at
+        Turtle Shirts.</p>
 </div>
 <img id='mainimgmobile' src="/images/slider/IMG_0509.JPG"
-     class="img-rounded hidden-lg col-xs-12 col-xs-offset-0 no-pad" style="padding-left:0;padding-right:0;">
+     class="img-rounded hidden-lg col-xs-12 col-xs-offset-0 no-pad">
 <div class="panel hidden-lg box col-xs-12 ">
     <h1 class="title">Nicholas Kaffine</h1>
     <p class="aboutme">I have been doing web development work for the last year creating web applications that use PHP
         to interact with a MySQL database. In addition to web development I have been watching a Stanford course on IOS
         development which is another area that I want to explore. I have been working on two startups. </p>
-    <p class="aboutme"><a href="https://www.turtleshirts.org">Turtle Shirts</a> is a clothing brand that I started with two friends from my high school internship. I constructed
+    <p class="aboutme"><a href="https://www.turtleshirts.org">Turtle Shirts</a> is a clothing brand that I started with
+        two friends from my high school internship. I constructed
         the website which is designed to handle low volumes of transactions using a MySQL
         database with PHP and the Stripe.js API to process payments.</p>
-    <p class="aboutme">I am also working on a startup Owaygo. I have been constructing a database application prototyped with a website
+    <p class="aboutme">I am also working on a startup Owaygo. I have been constructing a database application prototyped
+        with a website
         that manages user authentication through Facebook, purchases with Stripe.js, and handles user uploaded media
         information about restaurants in areas around them.</p>
-    <p class="aboutme">One of hobbies is creating and playing music. When I get the chance I play concerts with my high school band
-        <a href="http://theaccidents.band">The Accidents</a> or I write electronic music. One of my more recent songs was used as the background music for
-        a <a href="https://youtu.be/wLkLwKLaTZo" target="_blank">commercial</a> that I made with my co-founders at Turtle Shirts.</p>
+    <p class="aboutme">One of hobbies is creating and playing music. When I get the chance I play concerts with my high
+        school band
+        <a href="http://theaccidents.band">The Accidents</a> or I write electronic music. One of my more recent songs
+        was used as the background music for
+        a <a href="https://youtu.be/wLkLwKLaTZo" target="_blank">commercial</a> that I made with my co-founders at
+        Turtle Shirts.</p>
 </div>
-<div class="col-xs-12" id="work" style="height:5vh;"></div>
+<div class="col-xs-12 gap" id="work"></div>
 <div class="col-lg-6 col-lg-offset-3 col-xs-12 col-xs-offset-0 panel">
     <h1>Work Experience</h1>
     <div class="col-lg-12 no-pad">
-        <h3 class="col-lg-6 experience no-pad"><a style="color: black;" href="https://www.nowyouknowchannel.com"
-                                                  target="_blank">Now You Know</a> <span
-                    style="font-weight: normal;font-size:20px;">Westford, MA</span></h3>
-        <p class="experienceDate text-right col-lg-6 no-pad" style="font-size:20px;font-weight: normal;">December
+        <h3 class="col-lg-6 experience no-pad">
+            <a class="headerlink" href="https://www.nowyouknowchannel.com" target="_blank">Now You Know</a>
+            <span class="location">Westford, MA</span>
+        </h3>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">December
             2017-present</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Web Developer</p>
+        <p class="col-lg-12 no-pad jobtitle">Web Developer</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Compiled MySQL database of all Tesla Superchargers and Destination Chargers</li>
             <li class="list-group-item">Assembled website using Google Maps API displaying Tesla Chargers</li>
@@ -98,12 +110,12 @@
         </uL>
     </div>
     <div class="col-lg-12 no-pad">
-        <h3 class="col-lg-6 experience no-pad"><a style="color: black;" href="https://www.turtleshirts.org"
+        <h3 class="col-lg-6 experience no-pad"><a class="headerlink" href="https://www.turtleshirts.org"
                                                   target="_blank">Turtle Shirts</a> <span
-                    style="font-weight: normal;font-size:20px;">Westford, MA</span></h3>
-        <p class="experienceDate text-right col-lg-6 no-pad" style="font-size:20px;font-weight: normal;">August
+                    class="jobinfo">Westford, MA</span></h3>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">August
             2017-present</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Co-Founder/Web
+        <p class="col-lg-12 no-pad jobtitle">Co-Founder/Web
             Developer</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Launched website using HTML, CSS, Bootstrap, Javascript and PHP to interact with
@@ -114,12 +126,12 @@
             <li class="list-group-item">Researches environmental issues affecting turtles</li>
         </uL>
     </div>
-    <div class="col-lg-12" style="padding-left:0;padding-right:0;">
-        <h3 class="col-lg-6 experience" style="padding-left:0;padding-right:0;">Owaygo <span
-                    style="font-weight: normal;font-size:20px;">Westford, MA</span></h3>
-        <p class="experienceDate text-right col-lg-6 no-pad" style="font-size:20px;font-weight: normal;">March
+    <div class="col-lg-12 no-pad">
+        <h3 class="col-lg-6 experience no-pad">Owaygo <span
+                    class="jobinfo">Westford, MA</span></h3>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">March
             2017-present</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Co-Founder/Web
+        <p class="col-lg-12 no-pad jobtitle">Co-Founder/Web
             Developer</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Designed and Implemented relational database with MySQL</li>
@@ -127,12 +139,12 @@
             <li class="list-group-item">Generated website using HTML, CSS, Bootstrap, Javascript and PHP</li>
         </uL>
     </div>
-    <div class="col-lg-12" style="padding-left:0;padding-right:0;">
-        <h3 class="col-lg-6 experience no-pad">Night Train Studios/Black Cloud Production <span
-                    style="font-weight: normal;font-size:20px;">Westford, MA</span></h3>
-        <p class="experienceDate text-right col-lg-6 no-pad" style="font-size:20px;font-weight: normal;">October
+    <div class="col-lg-12 no-pad">
+        <h3 class="col-lg-6 experience no-pad">Night Train Studios/Black Cloud Production <span class="jobinfo">Westford, MA</span>
+        </h3>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">October
             2014-May 2017</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Audio Engineering
+        <p class="col-lg-12 no-pad jobtitle">Audio Engineering
             Intern</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Researched potential artists to enter into publishing agreements</li>
@@ -140,13 +152,14 @@
         </uL>
     </div>
 </div>
-<div class="col-xs-12" id="projects" style="height:5vh;"></div>
+<div class="col-xs-12 gap" id="projects"></div>
 <div class="col-lg-6 col-lg-offset-3 panel col-xs-12 col-xs-offset-0">
     <h1>Projects</h1>
     <div class="col-lg-12 no-pad">
-        <h3 class="col-lg-6 experience no-pad"><a href="https://github.com/nkaffine/budgeting" target="_blank" style="color: black;">Budgeting Website</a></h3>
-        <p class="experienceDate text-right col-lg-6 no-pad" style="font-size:20px;font-weight: normal;">In-Progress</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Web Developer</p>
+        <h3 class="col-lg-6 experience no-pad"><a href="https://github.com/nkaffine/budgeting" target="_blank"
+                                                  class="headerlink">Budgeting Website</a></h3>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">In-Progress</p>
+        <p class="col-lg-12 no-pad jobtitle">Web Developer</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Established relational database using MySQL for transactions and accounts</li>
             <li class="list-group-item">Composed web API to interact with MySQL database in PHP</li>
@@ -154,11 +167,10 @@
         </uL>
     </div>
     <div class="col-lg-12 no-pad">
-        <h3 class="col-lg-6 experience no-pad"><a style="color: black;" href="https://www.rps.kaffine.tech"
+        <h3 class="col-lg-6 experience no-pad"><a class="headerlink" href="https://www.rps.kaffine.tech"
                                                   target="_blank">Predictive Rock Paper Scissors</a></h3>
-        <p class="experienceDate text-right col-lg-6"
-           style="font-size:20px;font-weight: normal; padding-left:0;padding-right:0;">October 2017</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Web Developer</p>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">October 2017</p>
+        <p class="col-lg-12 no-pad jobtitle">Web Developer</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Implemented MySQL database to log all games of rock paper scissors with a unique
                 identifier for each player using browser cookies
@@ -170,11 +182,10 @@
         </uL>
     </div>
     <div class="col-lg-12 no-pad">
-        <h3 class="col-lg-6 experience no-pad"><a style="color: black;" href="http://www.connchords.com/"
+        <h3 class="col-lg-6 experience no-pad"><a class="headerlink" href="http://www.connchords.com/"
                                                   target="_blank">Home To Her</a></h3>
-        <p class="experienceDate text-right col-lg-6"
-           style="font-size:20px;font-weight: normal; padding-left:0;padding-right:0;">May 2017</p>
-        <p class="col-lg-12 no-pad" style="font-size:20px;font-weight: normal;font-style: italic;">Audio Engineer</p>
+        <p class="experienceDate text-right col-lg-6 no-pad jobinfo">May 2017</p>
+        <p class="col-lg-12 no-pad jobtitle">Audio Engineer</p>
         <ul class="list-group col-lg-12">
             <li class="list-group-item">Facilitated recording of takes using Sonar for The Connchords’ album Home To
                 Her
@@ -183,41 +194,55 @@
         </uL>
     </div>
 </div>
-<div class="col-xs-12" id="about" style="height:5vh;"></div>
+<div class="col-xs-12 gap" id="about"></div>
 <div class="col-lg-6 col-lg-offset-3 panel col-xs-12 col-xs-offset-0">
     <h1>About Me</h1>
     <div class="col-lg-12 no-pad">
         <h2>Coding</h2>
         <h3>The Start (Applescript)</h3>
-        <p class="aboutme">My first significant coding experience was with Applescript. I discovered Applescript in my senior year of high school which
+        <p class="aboutme">My first significant coding experience was with Applescript. I discovered Applescript in my
+            senior year of high school which
             in the end is what I believe led me to become a computer science major.
-            My <a href="https://github.com/nkaffine/budgeting_applescript" target="_blank">first project</a> with Applescript was creating an interface to more easily track my transactions in a
-            spreadsheet. From my budgeting Applescript I branched out into other functionality of Applescript such as the
-            speech recognition server and Spotify integration to create a <a href="https://github.com/nkaffine/voice_control_applescript" target="_blank">voice controlled media script</a>.
+            My <a href="https://github.com/nkaffine/budgeting_applescript" target="_blank">first project</a> with
+            Applescript was creating an interface to more easily track my transactions in a
+            spreadsheet. From my budgeting Applescript I branched out into other functionality of Applescript such as
+            the
+            speech recognition server and Spotify integration to create a <a
+                    href="https://github.com/nkaffine/voice_control_applescript" target="_blank">voice controlled media
+                script</a>.
         </p>
         <h3>Web Dev</h3>
-        <p class="aboutme">I first started doing web development seriously when I started working on my first startup, Owaygo.
+        <p class="aboutme">I first started doing web development seriously when I started working on my first startup,
+            Owaygo.
             I checked out Learning MySQL: Get a Handle on Your Data from the Northeastern library and started reading it
-            so I could learn how to use MySQL and how to integrate that into a web application. By July I was starting to
+            so I could learn how to use MySQL and how to integrate that into a web application. By July I was starting
+            to
             get a handle on interfacing with a MySQL database using PHP. I started working on the startup full time for
             the two months in between the summer semester and the fall semester where I was able to really dive into
-            web development. With the skills that I gained that summer I started working on many different web applications
-            that used PHP to integrate with a MySQL database such as my <a href="https://github.com/nkaffine/predictive_rps" target="_blank">predictive rock paper scissors</a> project and my
+            web development. With the skills that I gained that summer I started working on many different web
+            applications
+            that used PHP to integrate with a MySQL database such as my <a
+                    href="https://github.com/nkaffine/predictive_rps" target="_blank">predictive rock paper scissors</a>
+            project and my
             <a href="https://github.com/nkaffine/budgeting" target="_blank">budgeting website project.</a></p>
         <h3>IOS Developement</h3>
-        <p class="aboutme">Over this past december break I started watching the Stanford course CS 193P through iTunes to start learning
-            Swift. I haven't watched too far into the course but in the free time that I have I try and watch lectures and
+        <p class="aboutme">Over this past december break I started watching the Stanford course CS 193P through iTunes
+            to start learning
+            Swift. I haven't watched too far into the course but in the free time that I have I try and watch lectures
+            and
             practice working with Swift and creating apps.</p>
         <h2>Music</h2>
         <h3>Background</h3>
-        <p class="aboutme">I started playing guitar when I was 6 with ambitions of being either a musician or a baseball player.
+        <p class="aboutme">I started playing guitar when I was 6 with ambitions of being either a musician or a baseball
+            player.
             As I got older I started to make my ambitions more realistic and decided that I would just be a musician.
             I was in various different bands from 3rd to 11th grade with occasional performances in school.
             In 10th grade as part of an honors project I wrote and recorded a 10 song album that is hidden away so that
             no one will ever here it again.
         </p>
-        <h3><a style="color:black;" href="https://soundcloud.com/jumbotronica" target="_blank">Jumbotronica</a></h3>
-        <p class="aboutme">In July of 2015 I was lost in thought and I came up with the name Jumbotronica. "What a great name for an
+        <h3><a class="headerlink" href="https://soundcloud.com/jumbotronica" target="_blank">Jumbotronica</a></h3>
+        <p class="aboutme">In July of 2015 I was lost in thought and I came up with the name Jumbotronica. "What a great
+            name for an
             electronic artist!" I thought to myself.
             Since I liked the name so much, I decided that I had to start writing electronic music and release it under
             that name.
@@ -226,7 +251,7 @@
             My senior project was to start a music career which led me to decide to release an electronic song every
             three days.
             In december of 2015 I decided to shift my project to the band that I was in at the time, The Accidents.</p>
-        <h3><a style="color:black;" href="theaccidents.band" target="_blank">The Accidents</a></h3>
+        <h3><a class="headerlink" href="theaccidents.band" target="_blank">The Accidents</a></h3>
         <p class="aboutme">The debut of The Accidents was in early january in 2016 when we performed <a
                     href="https://www.youtube.com/watch?v=ac6V4v0x9u4">You Think I Don't Know(But I Know) by
                 Morningbell</a> at Chelmsford High School (We reached out to the band and they agreed to let us put our
@@ -247,6 +272,6 @@
             our schedules.</p>
     </div>
 </div>
-<div class="col-xs-12" style="height: 20vh;"></div>
+<div class="col-xs-12 bottom"></div>
 </body>
 </html>
