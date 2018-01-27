@@ -25,14 +25,15 @@ body:after {
 }
 
 #mainimg {
-    margin-top: 2.5%;
+    margin-top: 5%;
 }
 
 #mainimgmobile {
+    margin-top: 50px;
 }
 
 #description {
-    margin-top: 2.5%;
+    margin-top: 5%;
 }
 
 .no-pad {
