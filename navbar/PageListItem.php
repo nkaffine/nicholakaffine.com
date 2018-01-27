@@ -44,7 +44,7 @@
         public function generateHtml() {
             $html = "<li class='toPageLink";
             if ($this->isSelected) {
-                $html .= " class='active'";
+                $html .= " active'";
             }
             return $html . "'><a href=\"{$this->link}\">{$this->title}</a></li>";
         }

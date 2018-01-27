@@ -9,6 +9,11 @@
     class Projects {
         private $experiences;
 
+        /**
+         * Projects constructor.
+         *
+         * @param $experiences Experience[] the list of experiences for this project section.
+         */
         public function __construct($experiences) {
             if ($experiences === null) {
                 throw new InvalidArgumentException("Experiences cannot be null");
@@ -21,9 +26,13 @@
             }
         }
 
+        /**
+         * Creates the formatted html for the projects section of the website.
+         *
+         * @return string the formatted html for the projects section of the website.
+         */
         public function generateHTML() {
-            $html = "<div class=\"col-xs-12 gap\" id=\"projects\"></div><div class=\"col-lg-6 col-lg-offset-3 col-xs-12 col-xs-offset-0 panel\">
-    <h1>Projects</h1>";
+            $html = "<div class=\"col-xs-12 gap\" id=\"projects\"></div><div class=\"col-lg-6 col-lg-offset-3 col-xs-12 col-xs-offset-0 panel\"><h1>Projects</h1>";
             foreach ($this->experiences as $experience) {
                 $html .= $experience->generateHTML();
             }

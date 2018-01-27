@@ -10,6 +10,12 @@
         private $title;
         private $subcategories;
 
+        /**
+         * AboutCategory constructor.
+         *
+         * @param $title string the title of the about category.
+         * @param ...$subcategories string[] the subcategories of the about category.
+         */
         public function __construct($title, ...$subcategories) {
             if($title === null || $subcategories === null) {
                 throw new InvalidArgumentException("Title and subcategories must not be null");
@@ -22,6 +28,11 @@
             }
         }
 
+        /**
+         * Generates the formatted html for this about category on the page.
+         *
+         * @return string the formatted html for this about category.
+         */
         public function generateHTML() {
             $html = "<h2>{$this->title}</h2>";
             foreach ($this->subcategories as $subcategory) {

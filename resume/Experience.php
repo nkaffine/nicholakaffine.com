@@ -14,6 +14,16 @@
         private $jobtitle;
         private $accomplishments;
 
+        /**
+         * Experience constructor.
+         *
+         * @param $title string the title of the experience.
+         * @param $location string the location of the experience.
+         * @param $date string the date of the experience.
+         * @param $jobtitle string the name of the position at the experience.
+         * @param $accomplishments string[] the accomplishments at the experience.
+         * @param $titleLink string the link of title if there is one.
+         */
         public function __construct($title, $location, $date, $jobtitle, $accomplishments, $titleLink) {
             if ($title === null || $date === null || $jobtitle === null) {
                 throw new InvalidArgumentException("Only title link can be null");
@@ -33,6 +43,11 @@
             }
         }
 
+        /**
+         * Generates the formatted html for this experience.
+         *
+         * @return string the formatted html.
+         */
         public function generateHTML() {
             $html = "<div class=\"col-lg-12 no-pad\"><h3 class=\"col-lg-6 experience no-pad\">";
             if ($this->titleLink !== null) {
