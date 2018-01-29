@@ -64,9 +64,9 @@
         array("Facilitated recording of takes using Sonar for The Connchords’ album Home To Her",
             "Managed recording equipment to ensure smooth transition between takes"), "http://www.connchords.com/"));
     $header = new Header("/images/slider/IMG_0509.JPG",
-        "I have been doing web development work for the last year creating web applications that use PHP to interact with a MySQL database. In addition to web development I have been watching a Stanford course on IOS development which is another area that I want to explore. I have been working on two startups. ",
+        "I have been doing web development work for the last year creating web applications that use PHP to interact with a MySQL database. In addition to web development I have been watching a Stanford course on IOS development, another area that I want to explore. I have been also working on two startups: Turtleshirts and Owaygo. ",
         "<a href=\"https://www.turtleshirts.org\">Turtle Shirts</a> is a clothing brand that I started with two friends from my high school internship. I constructed the website which is designed to handle low volumes of transactions using a MySQL database with PHP and the Stripe.js API to process payments.",
-        "I am also working on a startup Owaygo. I have been constructing a database application prototyped with a website that manages user authentication through Facebook, purchases with Stripe.js, and handles user uploaded media information about restaurants in areas around them.",
+        "Owaygo is a startup with the goal of improving the restaurant discovery experience. I have been constructing a database application prototyped with a website that manages user authentication through Facebook, purchases with Stripe.js, and handles user uploaded media and information about restaurants in areas around users.",
         "One of hobbies is creating and playing music. When I get the chance I play concerts with my high school band <a href=\"http://theaccidents.band\">The Accidents</a> or I write electronic music. One of my more recent songs was used as the background music for a <a href=\"https://youtu.be/wLkLwKLaTZo\" target=\"_blank\">commercial</a> that I made with my co-founders at Turtle Shirts.");
     $page->addToBody($header->generateHTML(), Page::BOTTOM);
     $work = new WorkExperience($work_experiences);
