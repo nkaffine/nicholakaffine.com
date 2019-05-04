@@ -16,6 +16,8 @@
     require_once(__DIR__ . "/about/AboutMe.php");
     require_once(__DIR__ . "/about/AboutSubCategory.php");
     require_once(__DIR__ . "/about/Header.php");
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
     $nav = new MainNav();
     $nav->addToLeftList("home", new PageListItem("Home", "/"));
     $nav->addToLeftList("work", new PageListItem("Work Experience", "/#work"));
@@ -80,6 +82,8 @@
                 "Researched potential artists to enter into publishing agreements",
                 "Identified music supervisors to send publishable music library to"), null));
     $project_experiences = array();
+    array_push($project_experiences, new Experience("The Archives", "Boston MA", "March 2019 - May 2019","Audio Engineer/Song Writer",
+        array("Composed 5 original songs and arranged a cover of Flume by Bon Iver", "Tracked, mixed, and mastered songs for the album"), ""));
     array_push($project_experiences, new Experience("Good Boi?", "Boston, MA",
         "December 2018-January 2019", "iOS Developer",
             array("Generated Core ML model using Create ML using 2,000 images",
@@ -101,8 +105,9 @@
     $header = new Header("images/IMG_6275.JPG",
         "I am a third year computer science student at Northeastern with an itch for entrepreneurship. 
         I have been coming up with ideas for companies and starting companies ever since my first company in my sophomore year of
-         high school called Kaffine School of Music. Once I started college I started two of my more serious companies, Owaygo and 
-         Boston Ocean Company. Recently me and my co-founder put Owaygo on hold so we could devote more time to Boston Ocean Company.",
+         high school called Kaffine School of Music. Once I started college I started two of my more serious companies: Owaygo and 
+         Boston Ocean Company. Recently me and my co-founder put Owaygo on hold so we could devote more time to Boston Ocean Company. 
+         I also write music in my spare time, my latest album called <a href='https://nkaffine.bandcamp.com/album/the-archives'>The Archives</a> came out in May.",
         "<a href='https://www.bostonoceancompany.com/' target='_blank'>Boston Ocean Company</a> has gone through some awesome changes since I started the company with my co-founder Bobby Briggs in 
         August of 2017. Bobby came up with the idea for the company almost as a joke and we just ran with it. It was a simple concept, 
         let’s make some turtle themed clothing and then donate a portion of our proceeds to a company that is doing something good for the 
@@ -120,9 +125,8 @@
         front end, and manage and iOS intern that we onboarded. With the context switching between PHP, Swift, and business development for 
         Boston Ocean Company, the company made very little progress which is what eventually led to it being put on hold.",
         "One of hobbies is creating and playing music. When I get the chance I play concerts with my high school band The Accidents or I 
-        write electronic music. My most recent music project is a short album that I will release in late April of some of the music that 
-        I have been working on sporadically for the two years or so. I recently released a single from the album called 
-        <a href='https://nkaffine.bandcamp.com/track/december'>December</a>.");
+        write electronic music. My most recent music project is a short album that I released in early May of some of the music that 
+        I have been working on sporadically for the two years or so, a new song that I wrote recently, and a cover of my favorite Bon Iver song.");
     $page->addToBody($header->generateHTML(), Page::BOTTOM);
     $work = new WorkExperience($work_experiences);
     $page->addToBody($work->generateHTML(), Page::BOTTOM);
@@ -161,7 +165,7 @@
         much I’ll enjoy that going forward.", null);
     $coding = new AboutCategory("Coding", $applescript, $webDev, $iosdev, $future, $futurePt2);
     $musicbackground = new AboutSubCategory("Background",
-        "I started playing guitar when I was 6 with ambitions of being either a musician or a baseball player. As I got older I started to make my ambitions more realistic and decided that I would just be a musician. I was in various different bands from 3rd to 11th grade with occasional performances in school. In 10th grade as part of an honors project I wrote and recorded a 10 song album that is hidden away so that no one will ever here it again.",
+        "I started playing guitar when I was 6 with ambitions of being either a musician or a baseball player. As I got older I started to make my ambitions more realistic and decided that I would just be a musician. I was in various different bands from 3rd to 11th grade with occasional performances in school. In 10th grade as part of an honors project I wrote and recorded a 10 song album that is hidden away so that no one will ever hear it again.",
         null);
     $jumbotronica = new AboutSubCategory("Jumbotronica",
         "In July of 2015 I was lost in thought and I came up with the name Jumbotronica. \"What a great name for an electronic artist!\" I thought to myself. Since I liked the name so much, I decided that I had to start writing electronic music and release it under that name. I started writing the electronic music using Logic Pro X which I had purchased earlier that summer. I posted a few songs on Soundcloud over the summer before deciding to incorperate it into my senior project. My senior project was to start a music career which led me to decide to release an electronic song every three days. In december of 2015 I decided to shift my project to the band that I was in at the time, The Accidents.",
@@ -177,7 +181,9 @@ During the last half of my senior year I organized and promoted two concerts at 
   with some other local acts the summer of 2018, and another concert put on by some younger acts this past december where we played an arrangement of the cover of 
   Gucci Gang that was done by Drake Bell. We still haven't decided if this will be the final hiatus of The Accidents, but we can easily be persuaded to play again.",
         "http://theaccidents.band");
-    $music = new AboutCategory("Music", $musicbackground, $jumbotronica, $theaccidents);
+    $theComback = new AboutSubCategory("The Comeback",
+        "After going on a nostalgia trip over spring break this year, I decided to release some of the songs that I have been writing over the last three or so years that I have been in college. I planned to do this over two months but really I planned to do it the week in between the end of the semester and when I would be working for the summer. Originally my intention was for this to be a one off release and serve as some sort of conclusion to my electronic music creation because I haven’t been doing it as much lately. That being said, I actually had a lot of fun putting the album together and I think that I’ll probably continue to release more music sporadically in the future so stay tuned.", "https://nkaffine.bandcamp.com/");
+    $music = new AboutCategory("Music", $musicbackground, $jumbotronica, $theaccidents, $theComback);
     $aboutme = new AboutMe($coding, $music);
     $page->addToBody($aboutme->generateHTML(), Page::BOTTOM);
     $page->addToBody("</div><div class=\"col-xs-12 bottom\"></div>", Page::BOTTOM);

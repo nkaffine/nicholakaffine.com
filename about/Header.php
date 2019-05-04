@@ -23,7 +23,12 @@
         }
 
         public function generateHTML() {
-            $html = "<img id=\"mainimg\" src=\"images/IMG_6275.JPG\" class=\"img-rounded col-lg-offset-3 visible-lg col-lg-3 no-pad\">";
+            $html = "<a href='https://nkaffine.bandcamp.com/album/the-archives'><img id=\"mainimg\" src=\"images/TheArchivesCover.png\" class=\"img-rounded col-lg-offset-3 visible-lg col-lg-3 no-pad\"></a>";
+            $playerLink = "https://bandcamp.com/EmbeddedPlayer/track=1837953795/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/";
+            $otherLink = "http://nkaffine.bandcamp.com/track/december";
+            $title = "December by Nick Kaffine";
+//            $html = "<iframe id='mainimg' style='border: 0; width: 350px; height: 350px;' class='img-rounded col-lg-offset-3 visible-lg col-lg-3 no-pad'
+//                src='{$playerLink}' seamless><a href='{$otherLink}'>{$title}</a></iframe>";
             $html .= "<div class=\"panel col-lg-3 box visible-lg\" id=\"description\" style=\"overflow: scroll;\"><h1 class=\"title\">Nicholas Kaffine</h1>";
             $paragraphs = "";
             foreach($this->paragraphs as $paragraph) {
@@ -31,7 +36,9 @@
             }
             $html .= $paragraphs;
             $html .= "</div>";
-            $html .= "<img id='mainimgmobile' src=\"images/IMG_6275.JPG\" class=\"img-rounded hidden-lg col-xs-12 col-xs-offset-0 no-pad\"><div class=\"panel hidden-lg box col-xs-12 \"><h1 class=\"title\">Nicholas Kaffine</h1>";
+            $html .= "<a href='https://nkaffine.bandcamp.com/album/the-archives'><img id='mainimgmobile' src=\"images/TheArchivesCover.png\" class=\"img-rounded hidden-lg col-xs-12 col-xs-offset-0 no-pad\"><div class=\"panel hidden-lg box col-xs-12 \"><h1 class=\"title\">Nicholas Kaffine</h1></a>";
+//            $html .= "<iframe id='mainimgmobile' style='border: 0; width: 100%; height: 350px;' class='img-rounded hidden-lg col-xs-12 col-xs-offset-0 no-pad'
+//                src='{$playerLink}' seamless><a href='{$otherLink}'>{$title}</a></iframe>";
             $html .= $paragraphs;
             return $html . "</div>";
         }
