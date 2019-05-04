@@ -1,5 +1,5 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/navbar/INavbar.php");
+    require_once(__DIR__ . "/INavbar.php");
 
     /**
      * Created by PhpStorm.
@@ -98,7 +98,7 @@
          * @param $pageListItem INavbarItem the list item.
          */
         public function addToLeftList($name, $pageListItem) {
-            if ($this->left[$name] !== null) {
+            if (@$this->left[$name] !== null) {
                 throw new InvalidArgumentException("Item with that name already exists");
             }
             $this->left[$name] = $pageListItem;

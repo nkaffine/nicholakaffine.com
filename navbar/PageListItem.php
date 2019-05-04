@@ -1,5 +1,5 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/navbar/INavbarItem.php");
+    require_once(__DIR__ . "/INavbarItem.php");
 
     /**
      * Created by PhpStorm.

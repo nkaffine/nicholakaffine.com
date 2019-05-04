@@ -1,5 +1,5 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/page/IPage.php");
+    require_once(__DIR__ . "/page/IPage.php");
 
     /**
      * Created by PhpStorm.

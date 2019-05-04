@@ -1,6 +1,6 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/page/IPage.php");
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/page/Page.php");
+    require_once(__DIR__ . "/IPage.php");
+    require_once(__DIR__ . "/Page.php");
 
     /**
      * Created by PhpStorm.
